@@ -42,9 +42,24 @@
         </div>
       </div>
       <ul class="thumb">
-        <li><img src="./assets/images/thumb1.png" /></li>
-        <li><img src="./assets/images/thumb2.png" /></li>
-        <li><img src="./assets/images/thumb3.png" /></li>
+        <li>
+          <img
+            src="./assets/images/thumb1.png"
+            onclick="imgSlider('./assets/images/img1.png')"
+          />
+        </li>
+        <li>
+          <img
+            src="./assets/images/thumb2.png"
+            onclick="imgSlider('./assets/images/img2.png')"
+          />
+        </li>
+        <li>
+          <img
+            src="./assets/images/thumb3.png"
+            onclick="imgSlider('./assets/images/img3.png')"
+          />
+        </li>
       </ul>
       <ul class="sci">
         <li>
@@ -57,5 +72,10 @@
         </li>
       </ul>
     </section>
+    <script type="text/javascript">
+      function imgSlider(anything) {
+        document.querySelector(".pasta").src = anything;
+      }
+    </script>
   </body>
 </html>
