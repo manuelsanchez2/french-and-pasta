@@ -1,0 +1,61 @@
+@font-face {
+  font-family: Bodoni-Regular;
+  src: url(./assets/fonts/BodoniFLF-Roman.ttf);
+
+  font-family: Bodoni-Bold;
+  src: url(./assets/fonts/BodoniFLF-Bold.ttf);
+
+  font-family: Bodoni-Italic;
+  src: url(./assets/fonts/BodoniFLF-Italic.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Bodoni-Regular;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  position: relative;
+  max-width: 180px;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+}
+
+header ul li {
+  list-style: none;
+}
+
+header ul li a {
+  display: inline-block;
+  color: #333;
+  font-family: Bodoni-Bold;
+  margin-left: 40px;
+  text-decoration: none;
+}
