@@ -1,0 +1,14 @@
+@font-face {
+  font-family: Bodoni-Regular;
+  src: url(./assets/fonts/BodoniFLF-Roman.ttf);
+
+  font-family: Bodoni-Bold;
+  src: url(./assets/fonts/BodoniFLF-Bold.ttf);
+
+  font-family: Bodoni-Italic;
+  src: url(./assets/fonts/BodoniFLF-Italic.ttf);
+}
+
+li {
+  font-family: Bodoni-Regular;
+}
