@@ -59,3 +59,60 @@ header ul li a {
   margin-left: 40px;
   text-decoration: none;
 }
+
+/* Content  */
+
+.content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content .textBox {
+  position: relative;
+  max-width: 600px;
+}
+
+.content .textBox h2 {
+  color: #333;
+  font-size: 3.6em;
+  line-height: 1.2em;
+  font-weight: 500;
+}
+
+.content .textBox h2 span {
+  color: #ae5517;
+  font-size: 0.9em;
+  font-weight: 900;
+}
+
+.content .textBox p {
+  color: #333;
+}
+
+.content .textBox a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 20px;
+  background: #ae5517;
+  color: #fff;
+  border-radius: 40px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.content .imgBox {
+  width: 600px;
+  display: flex;
+  margin-top: 50px;
+  padding-left: 50px;
+  justify-content: flex-end;
+}
+
+.content .imgBox img {
+  max-width: 500px;
+}
