@@ -16,11 +16,12 @@
       <div class="circle"></div>
       <header>
         <a href="#"><img src="./assets/images/logo.png" class="logo" /></a>
+        <div class="toggleMenu"></div>
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Pasta</a></li>
-          <li><a href="#">Our values</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#">Values</a></li>
+          <li><a href="#">Order</a></li>
         </ul>
       </header>
       <div class="content">
@@ -72,15 +73,6 @@
         </li>
       </ul>
     </section>
-    <script type="text/javascript">
-      function imgSlider(anything) {
-        document.querySelector(".pasta").src = anything;
-      }
-
-      function changeCircleColor(color) {
-        const circle = document.querySelector(".circle");
-        circle.style.background = color;
-      }
-    </script>
+    <script src="app.js"></script>
   </body>
 </html>
