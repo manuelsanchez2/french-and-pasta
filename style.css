@@ -221,11 +221,11 @@ header ul li a {
   }
   .toggleMenu {
     position: relative;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     background: url(./assets//icons/menu.png);
     background-position: center;
-    background-size: 30px;
+    background-size: 20px;
     background-repeat: no-repeat;
     background-color: #ae5517;
     z-index: 2;
@@ -234,7 +234,7 @@ header ul li a {
   .toggleMenu.active {
     background: url(./assets//icons/close.png);
     background-position: center;
-    background-size: 25px;
+    background-size: 20px;
     background-repeat: no-repeat;
     background-color: #ae5517;
   }
