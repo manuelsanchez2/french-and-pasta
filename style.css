@@ -53,7 +53,7 @@ header ul li {
 }
 
 header ul li a {
-  display: inline-block;
+  /* display: inline-block; */
   color: #333;
   font-family: Bodoni-Bold;
   margin-left: 40px;
@@ -170,4 +170,124 @@ header ul li a {
   height: 100%;
   background: #8cbb9c;
   clip-path: circle(600px at right 800px);
+}
+
+/* media queries */
+
+@media (max-width: 991px) {
+  section {
+    padding: 0 35px;
+  }
+
+  header {
+    padding: 20px 40px;
+  }
+  header .logo {
+    position: relative;
+    max-width: 60px;
+  }
+
+  header ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  header ul.active {
+    visibility: visible;
+    opacity: 1;
+  }
+  header ul li a {
+    display: inline-block;
+    color: #111;
+    font-weight: 400;
+    margin-left: 0;
+    text-decoration: none;
+    font-size: 2em;
+    margin: 10px 0;
+  }
+  header ul li a:hover {
+    color: #ae5517;
+  }
+  .toggleMenu {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url(./assets//icons/menu.png);
+    background-position: center;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-color: #ae5517;
+    z-index: 2;
+    cursor: pointer;
+  }
+  .toggleMenu.active {
+    background: url(./assets//icons/close.png);
+    background-position: center;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-color: #ae5517;
+  }
+
+  .content {
+    flex-direction: column;
+    margin-top: 120px;
+  }
+
+  .content .textBox {
+    position: relative;
+    max-width: 100%;
+    padding-right: 20px;
+  }
+
+  .content .textBox h2 {
+    font-size: 1.7em;
+    margin-bottom: 15px;
+  }
+
+  .content .textBox a {
+    font-size: 13px;
+    padding: 7px 15px;
+  }
+
+  .content .imgBox {
+    width: 100%;
+    display: flex;
+    padding: 0;
+    margin-top: 50px;
+    justify-content: center;
+    margin-bottom: 120px;
+  }
+
+  .content .imgBox img {
+    max-width: 200px;
+  }
+
+  .thumb li img {
+    max-width: 50px;
+  }
+
+  .sci {
+    display: none;
+  }
+
+  .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #8cbb9c;
+    clip-path: circle(500px at right 800px);
+  }
 }
