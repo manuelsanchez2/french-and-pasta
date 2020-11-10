@@ -26,7 +26,47 @@
       </header>
       <div class="content">
         <div class="textBox">
-          <h2>Here you can order stuff</h2>
+          <h2>What is it today?</h2>
+          <p>
+            Please, take into account that orders will be asked to be made at
+            least one day beforehand. This way we can provide you with quality
+            fresh pasta.
+          </p>
+          <div class="form-container">
+            <form name="contact" method="POST" data-netlify="true">
+              <div class="parameter">
+                <label>Your Name: <input type="text" name="name" /></label>
+              </div>
+              <div class="parameter">
+                <label
+                  >Your Address: <input type="text" name="direction"
+                /></label>
+              </div>
+              <div class="parameter">
+                <label>Your Email: <input type="email" name="email" /></label>
+              </div>
+              <div class="parameter">
+                <label
+                  >Your Phone Number: <input type="number" name="phone"
+                /></label>
+              </div>
+              <label>Your order: <input type="text" name="order" /> </label>
+              <div class="parameter">
+                <label
+                  >Message:
+                  <textarea
+                    name="message"
+                    placeholder="Is there something we have to know?"
+                  ></textarea>
+                </label>
+              </div>
+              <div class="field">
+                <div data-netlify-recaptcha="true"></div>
+              </div>
+
+              <button type="submit">Send</button>
+            </form>
+          </div>
         </div>
         <div class="imgBox">
           <svg
@@ -464,6 +504,6 @@
         </div>
       </div>
     </section>
+    <script src="app.js"></script>
   </body>
-  <script src="app.js"></script>
 </html>
