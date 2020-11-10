@@ -1,0 +1,117 @@
+.imageBox {
+  padding: 10px;
+}
+
+.content .imgBox svg {
+  max-width: 650px;
+}
+
+@media (max-width: 991px) {
+  .content .imgBox img {
+    max-width: 200px;
+  }
+}
+
+/* ANIMATIONS  */
+
+/* #bg {
+  animation: move 5s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes move {
+  from {
+    transform: rotateZ(-7deg);
+  }
+
+  50% {
+    transform: rotateZ(5deg);
+  }
+
+  to {
+    transform: rotateZ(-7deg);
+  }
+} */
+
+#womanHand {
+  animation: handmoveGirl 5s infinite linear;
+}
+
+@keyframes handmoveGirl {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  50% {
+    transform: rotateZ(3deg);
+  }
+  to {
+    transform: rotateZ(0deg);
+  }
+}
+
+#manHand {
+  animation: handmoveMan 5s infinite linear;
+}
+
+@keyframes handmoveMan {
+  from {
+    transform: translateX(0%);
+  }
+
+  50% {
+    transform: translateX(3%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+#rightWheel,
+#leftWheel {
+  animation: wheel 200s infinite ease-in-out linear alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes wheel {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+#bikeMan {
+  animation: bike 1.5s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+
+@keyframes bike {
+  from {
+    transform: rotateX(0deg);
+  }
+
+  to {
+    transform: rotateX(20deg);
+  }
+}
+
+#hat {
+  animation: hat 1.5s ease-in-out infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes hat {
+  from {
+    transform: translateY(0%) rotateZ(0deg);
+  }
+
+  to {
+    transform: translateY(25%) rotateZ(10deg);
+  }
+}
