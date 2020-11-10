@@ -6,33 +6,106 @@
   max-width: 650px;
 }
 
+.content .textBox p {
+  margin: 10px 0;
+}
+
+.form-container {
+  margin-top: 15px;
+  height: 300px;
+}
+
+/* .form-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+} */
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 250px;
+  justify-content: space-evenly;
+}
+
+.form-container form .parameter {
+  margin-top: 10px;
+}
+
+.form-container label {
+  font-style: italic;
+}
+
+.form-container form input,
+.form-container form textarea {
+  padding: 08px;
+}
+
+.form-container form button {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 8px 20px;
+  background: #ae5517;
+  color: #fff;
+  border: 1px solid #111;
+  width: 150px;
+  border-radius: 40px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transform: scale(1);
+  transition: 2s ease-in-out;
+}
+
+.form-container form button:hover {
+  transform: scale(1.1);
+}
+
+/* .form-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
+
+.form-container form label input,
+.form-container form label textarea,
+.form-container form label select {
+  display: block;
+}
+
 @media (max-width: 991px) {
-  .content .imgBox img {
-    max-width: 200px;
+  .content .imgBox svg {
+    max-width: 300px;
+    height: 400px;
+    padding-top: 130px;
+  }
+
+  .content .imgBox {
+    margin-bottom: 0;
+  }
+
+  .form-container {
+    padding-top: 100px;
+  }
+
+  .form-container form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
+
+  .content .textBox {
+    position: relative;
+    max-width: 100%;
   }
 }
 
 /* ANIMATIONS  */
-
-/* #bg {
-  animation: move 5s infinite linear;
-  transform-origin: center;
-  transform-box: fill-box;
-}
-
-@keyframes move {
-  from {
-    transform: rotateZ(-7deg);
-  }
-
-  50% {
-    transform: rotateZ(5deg);
-  }
-
-  to {
-    transform: rotateZ(-7deg);
-  }
-} */
 
 #womanHand {
   animation: handmoveGirl 5s infinite linear;
